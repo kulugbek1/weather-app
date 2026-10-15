@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DM_Sans/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("./assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-style: italic;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Bricolage Grotesque";
+  src: url("./assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-dm-sans: "DM Sans", sans-serif;
+  --font-bricolage-grotesque: "Bricolage Grotesque", sans-serif;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  background-color: #02012b;
+}
+
+body {
+  font-family: var(--font-dm-sans);
+  margin: 0;
+}
